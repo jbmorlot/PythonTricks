@@ -32,7 +32,7 @@ try:
     for process in processes:
         process.join()
         
-    result_list = [recv_end.recv() for recv_end in recv_end_c]
+    result_list = [recv_end.recv() for recv_end in recv_end_c] # The result is stored in a list
         
 except KeyboardInterrupt:
     print "Keyboard interrupt in main"
